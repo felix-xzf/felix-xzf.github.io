@@ -20,9 +20,6 @@ links:
   - name:         ttt
     url:          /ttt
     external:     false
-  - name:         归档
-    url:          /archives
-    external:     false
   - name:         标签
     url:          /tags
     external:     false
@@ -32,7 +29,7 @@ links:
 # ------------ CONFIGURABLE END ------------
 
 #permalink:        /:categories/:title.html
-permalink: /:year/:month/:day/:title.html
+# permalink: /:year/:month/:day/:title.html
 defaults:
   - values:
       layout: "default"
