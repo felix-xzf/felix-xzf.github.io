@@ -1,11 +1,11 @@
 # ----------- CONFIGURABLE START -----------
-title:            "LiberXue|FullStack|独立开发者|jekyll blog|GitHub blog"
-description:      "Full Stack独立开发者|欢迎来到 LiberXue「角落」侃侃理想、谈谈人生、敲敲代码。"
+title:            "felix-xzf|GitHub blog"
+description:      "侃侃理想、谈谈人生、敲敲代码。"
 url:              https://felix-xzf.github.io # 域名
-signoff:          "LiberXue" # Your name
-facebook_appid:   #liberxue
+signoff:          "felix-xzf" # Your name
+facebook_appid:   #
 google_analytics: UA-101222464-1
-share:            true 
+share:            true
 # 分页
 paginate: 15
 paginate_path: "liberxuepage:num"
@@ -17,8 +17,8 @@ links:
   - name:         书籍
     url:          /book
     external:     false
-  - name:         旅游
-    url:          /road
+  - name:         git
+    url:          /git
     external:     false
   - name:         归档
     url:          /archives
