@@ -4,7 +4,7 @@ istop: true
 title: "GitHub当作私密的版本控制系统远端版本库私有化哈"
 background-image: https://o243f9mnq.qnssl.com/2017/06/116099051.jpg
 date:  2017-03-07
-category: git
+category: ttt
 tags:
 - github
 - git-crypt
@@ -13,9 +13,9 @@ tags:
 - git-remote-gcryp
 - sshfs
 ---
- 
+
 ## 目的
- 
+
 我打算把所有服务器的配置文件用git管理起来，这样可以记录配置变更状况。 但是有一个问题是，如何多人协作？服务器配置信息非常敏感，如果这个版本库泄漏，整个公司的服务器架构就彻底泄漏了。 这个版本库只能在开发者本地电脑里面解密，远程托管版本库的服务器不应该知道文件里面的内容。
 
 那么解决办法就是：本地git版本库是解密的，在上传过程中内容全部加密，密钥保存在本地，同时密钥可以分享给其他开发者。
@@ -97,6 +97,3 @@ git config remote.cryptremote.gcrypt-participants "liberxue013"
 ```
 
 用这种方法，可以用``git``管理一些私密又需要协作的信息（比如服务器配置）， 也可以把github当作私密的版本控制系统来用（commit的消息还是明文的）。
-
-
-

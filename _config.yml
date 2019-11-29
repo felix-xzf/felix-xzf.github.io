@@ -17,8 +17,8 @@ links:
   - name:         书籍
     url:          /book
     external:     false
-  - name:         git
-    url:          /git
+  - name:         ttt
+    url:          /ttt
     external:     false
   - name:         归档
     url:          /archives

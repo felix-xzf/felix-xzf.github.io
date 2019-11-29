@@ -4,7 +4,7 @@ istop: true
 title: "Git忽略规则及.gitignore规则正确姿势"
 background-image: http://ot1cc1u9t.bkt.clouddn.com/17-7-16/38390376.jpg
 date:  2017-07-16 23:45:56
-category: git
+category: ttt
 tags:
 - github
 - git
@@ -23,7 +23,7 @@ touch .gitignore
 ## 注释Git忽略规则
 ```
 # 此为注释 – 将被 Git 忽略
- 
+
 *.a       # 忽略所有 .a 结尾的文件
 !lib.a    # 但 lib.a 除外
 /-liberxuesite     # 仅仅忽略项目根目录下的 liberxuesite 文件，不包括 subdir/liberxuesite
