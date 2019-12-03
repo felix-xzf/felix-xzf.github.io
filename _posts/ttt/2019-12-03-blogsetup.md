@@ -25,8 +25,8 @@ tags:
 [Atom](https://atom.io/)：一个跨平台文本编辑器  
 # 步骤  
 用Markdown在Atom上写了一篇文档，使用Git上传到GitHub上，Ruby和RubyGems支持的Jekyll生成静态站点
-1.注册GitHub账号
-2.从Jekyll Themes选择一个模板
-3.复制模板到github repository,名称为<user>.github.io
-4.修改配置文件_congig.xml
+1.注册GitHub账号  
+2.从Jekyll Themes选择一个模板  
+3.复制模板到github repository,名称为<user>.github.io  
+4.修改配置文件_congig.xml  
 5.访问https://<user>.github.io
