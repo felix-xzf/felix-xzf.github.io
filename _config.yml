@@ -14,11 +14,8 @@ links:
   - name:         首页
     url:          /
     external:     false
-  - name:         书籍
-    url:          /book
-    external:     false
-  - name:         ttt
-    url:          /ttt
+  - name:         随笔
+    url:          /essay
     external:     false
   - name:         标签
     url:          /tags
