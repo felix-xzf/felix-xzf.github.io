@@ -13,7 +13,7 @@ tags:
 ## java-23种设计模式
 > 设计模式是一套被反复使用的、多数人知晓的、经过分类编目的、代码设计经验的总结。  
 
-* 设计模式六大原则  
+* **设计模式六大原则**  
   1. 开闭原则：对扩展开放，对修改关闭--热插拔  
   2. 里氏代换原则：任何基类可以出现的地方，子类一定可以出现--继承、抽象化  
   3. 依赖倒转原则：针对接口编程，依赖于抽象而不依赖于具体  
@@ -24,14 +24,17 @@ tags:
 ### 创建型模式  
 
 #### 工厂模式  
-* 步骤
-  1. 创建一个接口--Shape.java
+* **步骤**
+  1. 创建一个接口--Shape.java  
+
   ```java
   public interface Shape {
     void draw();
   }
-  ```
-  2. 创建实现接口的实体类--Rectangle.java/Square.java/Circle.java
+  ```  
+
+  2. 创建实现接口的实体类--Rectangle.java/Square.java/Circle.java  
+
   ```java
   public class Rectangle implements Shape {
 
@@ -56,8 +59,10 @@ tags:
         System.out.println("Inside Circle::draw() method.");
      }
   }
-  ```
-  3. 创建一个工厂，生成基于给定信息的实体类的对象--ShapeFactory.java
+  ```  
+
+  3. 创建一个工厂，生成基于给定信息的实体类的对象--ShapeFactory.java  
+
   ```java
   public class ShapeFactory {
 
@@ -76,8 +81,10 @@ tags:
         return null;
      }
   }
-  ```
-  4. 使用该工厂，通过传递类型信息来获取实体类的对象--FactoryPatternDemo.java
+  ```  
+
+  4. 使用该工厂，通过传递类型信息来获取实体类的对象--FactoryPatternDemo.java  
+
   ```java
   public class FactoryPatternDemo {
 
@@ -89,7 +96,7 @@ tags:
 
         //调用 Circle 的 draw 方法
         shape1.draw();
-   
+
         //获取 Rectangle 的对象，并调用它的 draw 方法
         Shape shape2 = shapeFactory.getShape("RECTANGLE");
 
