@@ -130,11 +130,13 @@ tags:
 * 步骤  
 
     1.为形状创建一个接口--Shape  
+    
     ```java
     public interface Shape {
        void draw();
     }
-    ```
+    ```  
+
     2.创建实现接口的实体类--Rectangle/Square/Circle  
 
     ```java
@@ -196,15 +198,19 @@ tags:
           System.out.println("Inside Blue::fill() method.");
        }
     }
-    ```
+    ```  
+
     5.为 Color 和 Shape 对象创建抽象类来获取工厂--AbstractFactory
-    ```java
+    ```java  
+
     public abstract class AbstractFactory {
        public abstract Color getColor(String color);
        public abstract Shape getShape(String shape) ;
     }
-    ```
-    6.创建扩展了 AbstractFactory 的工厂类，基于给定的信息生成实体类的对象--ShapeFactory/ColorFactory
+    ```  
+
+    6.创建扩展了 AbstractFactory 的工厂类，基于给定的信息生成实体类的对象--ShapeFactory/ColorFactory  
+
     ```java
     public class ShapeFactory extends AbstractFactory {
 
@@ -251,8 +257,10 @@ tags:
           return null;
        }
     }
-    ```
-    7.创建一个工厂创造器/生成器类，通过传递形状或颜色信息来获取工厂--FactoryProducer
+    ```  
+
+    7.创建一个工厂创造器/生成器类，通过传递形状或颜色信息来获取工厂--FactoryProducer  
+
     ```java
     public class FactoryProducer {
        public static AbstractFactory getFactory(String choice){
@@ -264,8 +272,10 @@ tags:
           return null;
        }
     }
-    ```
-    8.使用 FactoryProducer 来获取 AbstractFactory，通过传递类型信息来获取实体类的对象
+    ```  
+
+    8.使用 FactoryProducer 来获取 AbstractFactory，通过传递类型信息来获取实体类的对象  
+
     ```java
     public class AbstractFactoryPatternDemo {
        public static void main(String[] args) {
