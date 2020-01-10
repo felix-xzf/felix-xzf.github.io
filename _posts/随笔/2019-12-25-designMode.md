@@ -204,7 +204,7 @@ tags:
        public abstract Shape getShape(String shape) ;
     }
     ```
-        6.创建扩展了 AbstractFactory 的工厂类，基于给定的信息生成实体类的对象--ShapeFactory/ColorFactory
+    6.创建扩展了 AbstractFactory 的工厂类，基于给定的信息生成实体类的对象--ShapeFactory/ColorFactory
     ```java
     public class ShapeFactory extends AbstractFactory {
 
