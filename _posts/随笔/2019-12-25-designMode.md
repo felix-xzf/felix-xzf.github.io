@@ -24,6 +24,13 @@ tags:
 ### 创建型模式  
 
 #### 工厂模式  
+
+* 核心
+  1. 定义一个创建对象的接口，让其子类决定实例化哪一个工厂类，创建过程在子类执行
+  2. 解决接口选择的问题，不同条件下创建不同实例  
+
+！[实现](https://raw.githubusercontent.com/felix-xzf/felix-xzf.github.io/master/style/images/factoryimpl.png)
+
 * **步骤**
   1. 创建一个接口--Shape.java  
 
