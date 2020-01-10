@@ -32,7 +32,7 @@ tags:
 ![实现](https://raw.githubusercontent.com/felix-xzf/felix-xzf.github.io/master/style/images/factoryimpl.png)
 
 * **步骤**
-    - 1.创建一个接口--Shape.java  
+    1.创建一个接口--Shape.java  
 
   ```java
   public interface Shape {
@@ -40,7 +40,7 @@ tags:
   }
   ```  
 
-    - 2.创建实现接口的实体类--Rectangle.java/Square.java/Circle.java  
+    2.创建实现接口的实体类--Rectangle.java/Square.java/Circle.java  
 
   ```java
   public class Rectangle implements Shape {
