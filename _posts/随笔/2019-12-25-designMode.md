@@ -31,7 +31,8 @@ tags:
 
 ![实现](https://raw.githubusercontent.com/felix-xzf/felix-xzf.github.io/master/style/images/factoryimpl.png)
 
-* **步骤**
+* **步骤**  
+
     1.创建一个接口--Shape.java  
 
   ```java
@@ -68,7 +69,7 @@ tags:
   }
   ```  
 
-  3. 创建一个工厂，生成基于给定信息的实体类的对象--ShapeFactory.java  
+    3.创建一个工厂，生成基于给定信息的实体类的对象--ShapeFactory.java  
 
   ```java
   public class ShapeFactory {
@@ -90,7 +91,7 @@ tags:
   }
   ```  
 
-  4. 使用该工厂，通过传递类型信息来获取实体类的对象--FactoryPatternDemo.java  
+    4.使用该工厂，通过传递类型信息来获取实体类的对象--FactoryPatternDemo.java  
 
   ```java
   public class FactoryPatternDemo {
@@ -126,14 +127,15 @@ tags:
 
 ![实现](https://raw.githubusercontent.com/felix-xzf/felix-xzf.github.io/master/style/images/absfactoryimpl.png)
 
-* 步骤
-  1. 为形状创建一个接口--Shape  
+* 步骤  
+
+    1.为形状创建一个接口--Shape  
 ```java
 public interface Shape {
    void draw();
 }
 ```
-  2. 创建实现接口的实体类--Rectangle/Square/Circle  
+    2.创建实现接口的实体类--Rectangle/Square/Circle  
 
 ```java
 public class Rectangle implements Shape {
@@ -161,14 +163,14 @@ public class Circle implements Shape {
 }
 ```
 
-  3. 为颜色创建一个接口--Color  
+    3.为颜色创建一个接口--Color  
 
 ```java
 public interface Color {
    void fill();
 }
 ```
-  4. 创建实现接口的实体类--Red/Green/Blue
+    4.创建实现接口的实体类--Red/Green/Blue
 
 ```java
 public class Red implements Color {
@@ -195,14 +197,14 @@ public class Blue implements Color {
    }
 }
 ```
-  5. 为 Color 和 Shape 对象创建抽象类来获取工厂--AbstractFactory
+    5.为 Color 和 Shape 对象创建抽象类来获取工厂--AbstractFactory
 ```java
 public abstract class AbstractFactory {
    public abstract Color getColor(String color);
    public abstract Shape getShape(String shape) ;
 }
 ```
-  6. 创建扩展了 AbstractFactory 的工厂类，基于给定的信息生成实体类的对象--ShapeFactory/ColorFactory
+    6.创建扩展了 AbstractFactory 的工厂类，基于给定的信息生成实体类的对象--ShapeFactory/ColorFactory
 ```java
 public class ShapeFactory extends AbstractFactory {
 
@@ -250,7 +252,7 @@ public class ColorFactory extends AbstractFactory {
    }
 }
 ```
-  7. 创建一个工厂创造器/生成器类，通过传递形状或颜色信息来获取工厂--FactoryProducer
+    7.创建一个工厂创造器/生成器类，通过传递形状或颜色信息来获取工厂--FactoryProducer
 ```java
 public class FactoryProducer {
    public static AbstractFactory getFactory(String choice){
@@ -263,7 +265,7 @@ public class FactoryProducer {
    }
 }
 ```
-  8. 使用 FactoryProducer 来获取 AbstractFactory，通过传递类型信息来获取实体类的对象
+    8.使用 FactoryProducer 来获取 AbstractFactory，通过传递类型信息来获取实体类的对象
 ```java
 public class AbstractFactoryPatternDemo {
    public static void main(String[] args) {
